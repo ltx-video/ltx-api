@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ltx-api"
+version = "0.1.0"
+description = "Python client for the LTX Video API — image-to-video and audio-to-video with LTX-2.5 Pro through a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "ltx-video"}]
+keywords = ["ai api", "ltx", "ltx api", "ltx python", "ltx-2.5-audio-to-video", "ltx-2.5-pro", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/ltx-video/ltx-api"
+Documentation = "https://ltx-video.github.io/ltx-api/"
+"Hosted model" = "https://synexa.ai/explore/lightricks/ltx-2.5-pro?utm_source=github&utm_medium=ugc&utm_campaign=ltx-video&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["ltx_api*"]
